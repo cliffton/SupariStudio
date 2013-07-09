@@ -3,9 +3,25 @@ body
 	background-color:#fffee9;
 }
 
-#topBar
+
+.popCircles
+{
+	-webkit-animation: popCirclesAnimate 5s;
+}
+
+
+
+@-webkit-keyframes popCirclesAnimate
+{
+	0%   {-webkit-transform:scale(0.5,0.5);}
+	50%  {-webkit-transform:scale(0.2,0.2);}
+	100% {-webkit-transform:scale(0.1,0.1);}
+}
+
+.topBar
 {
 	height: 50px;
+	background-color: red;
 }
 
 .circles
@@ -56,3 +72,5 @@ body
 	background-color: black;
 	position: relative;
 }
+
+
