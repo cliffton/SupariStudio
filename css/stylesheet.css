@@ -3,6 +3,96 @@ body
 	background-color:#fffee9;
 }
 
+.topBar
+{
+	
+}
+
+.workContainer
+{
+	height: 400px;
+	width: 2000px;
+	background-color: black;
+	opacity: 0.4;
+
+}
+
+.item
+{
+
+	border-radius: 50px;
+	height: 200px;
+	width: 400px;
+	background-color: red;
+	position: relative;
+	margin-top: 100px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 
 .popCircles
 {
@@ -34,9 +124,9 @@ body
 	cursor: url(../img/target2.png);
 	position: relative;
 	animation:myfirst 1s;
-	-webkit-animation:myfirst 1s; /* Safari and Chrome */
+	-webkit-animation:myfirst 1s; 
 	animation-iteration-count:infinite;
-	-webkit-animation-iteration-count:infinite; /*Safari and Chrome*/
+	-webkit-animation-iteration-count:infinite; 
 }
 
 @keyframes myfirst
@@ -46,7 +136,7 @@ body
 	100% {left:0px;}
 }
 
-@-webkit-keyframes myfirst /* Safari and Chrome */
+@-webkit-keyframes myfirst 
 {
 	0%   {left:0px;}
 	50%  {left:10px}
@@ -73,4 +163,4 @@ body
 	position: relative;
 }
 
-
+*/
