@@ -27,4 +27,9 @@
             {
                 
             });
+
+            $('#evelopeFront').mouseover(function()
+            {
+                $('#letter').slideUp("slow");
+            });
         });
