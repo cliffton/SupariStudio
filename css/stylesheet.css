@@ -173,16 +173,20 @@ body
 
 @-webkit-keyframes mymove /* Safari and Chrome */
 {
-0%   {background-position:400px 0px;;}
-25%  {background-position:800px 0px;}
-50%  {background-position:1200px 0px;}
-75%  {background-position:1600px 0px;}
-100% {background-position:2000px 0px;}
+	0%   {background-position:400px 0px;;}
+	25%  {background-position:800px 0px;}
+	50%  {background-position:1200px 0px;}
+	75%  {background-position:1600px 0px;}
+	100% {background-position:2000px 0px;}
 }
 
+#footer
+{
+	height: 400px;
+	margin-top: 100px;
+	border: 1px solid green;
 
-
-
+}
 
 
 
