@@ -184,45 +184,34 @@ body
 
 #footer
 {
-	height: 700px;
-
-	margin-top: 100px;
+	height: 400px;
 	border: 1px solid black;
 
 }
 
-#evelopeFront
+#evelope 
 {
-	position: absolute;
-	border: 1px solid green;
-	width: 800px;
-	height: 642px;
-	background-image: url('../img/evelopeFront.png');
-	z-index: 900;
+
+	position: relative;
+	margin-top: 20px;
 }
 
-#evelopeBack
+#evelopeOpen
 {
-	width: 800px;
-	height: 642px;
 	position: absolute;
-	border: 1px solid yellow;
-	background-image: url('../img/evelopeBack.png');
-	z-index: 700;
-	
+
 }
 
-#letter
+#evelopeTop
 {
-	width: 720px;
-	height: 400px;
 	position: absolute;
-	margin-left: 40px;
-	margin-top: 160px;
-	border: 1px solid white;
-	background-image: url('../img/letter.png');
-	z-index: 800;
+	width:298px;
+	margin-top: 147px;
+	margin-left: 5px;
+
+
 }
+
 
 #map 
 {
@@ -230,6 +219,7 @@ body
 	position: relative;
 	height: 400px;
 	background-color: red;
+	margin-top: 100px;
 
 }
 
