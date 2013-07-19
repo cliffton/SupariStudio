@@ -32,4 +32,14 @@
             {
                 $('#letter').slideUp("slow");
             });
+
+            $('.flap').hover(function(){
+                $(this).addClass('flipFlap');
+            },function(){
+                $(this).removeClass('flipFlap');
+            });            
+
+
+
+
         });
