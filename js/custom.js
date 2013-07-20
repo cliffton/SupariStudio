@@ -8,25 +8,47 @@
                 $(this).removeClass('flip');
             });
 
+            var leftPosition = $('.workContainer').position();
+            var carname="Volvo";
+            document.getElementById("demo").innerHTML=leftPosition.left;
+
             //move div yeah !!!
-            $('#goLeft').click(function()
-            {
-                $('.workContainer').animate({left:'+=-200px'});
-                $('#goLeft').animate({left:'+=200px'});
-                $('#goRight').animate({left:'+=200px'});
-            });
+            
+                $('#goLeft').click(function()
+                {  
+                    var leftPosition = $('.workContainer').position();
+                    document.getElementById("demo").innerHTML=leftPosition.left;
+                    if(leftPosition.left>-500)
+                    {
+                        $('.workContainer').animate({left:'+=-200px'});
+                        $('#goLeft').animate({left:'+=200px'});
+                        $('#goRight').animate({left:'+=200px'});
+                    }
 
-             $('#goRight').click(function()
-            {
-                $('.workContainer').animate({left:'+=200px'});
-                $('#goRight').animate({left:'+=-200px'});
-                $('#goLeft').animate({left:'+=-200px'});
-            });
 
-            $('#treasure').click(function()
-            {
-                
-            });
+
+                });
+
+           
+
+            
+                $('#goRight').click(function()
+                {
+
+                    var leftPosition = $('.workContainer').position();
+                    document.getElementById("demo").innerHTML=leftPosition.left;
+                    if(leftPosition.left<0)
+                    {
+                        $('.workContainer').animate({left:'+=200px'});
+                        $('#goRight').animate({left:'+=-200px'});
+                        $('#goLeft').animate({left:'+=-200px'});
+                    }
+
+                });
+
+            
+
+            
 
             $('#evelopeFront').mouseover(function()
             {

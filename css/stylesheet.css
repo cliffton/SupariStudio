@@ -16,6 +16,7 @@ body
 	opacity: 0.6;
 	z-index: 100;
 	position: relative;
+	left: 0px;
 
 
 }
@@ -29,7 +30,7 @@ body
 .item
 {
 	
-	border-radius: 100px;
+	/*border-radius: 100px;*/
 	height: 200px;
 	width: 200px;
 	top: 100px;
@@ -37,6 +38,7 @@ body
 	margin: 0 auto;
 	-webkit-perspective: 600px;
     -moz-perspective: 600px;
+    margin-left: 50px;
 
 }
 
@@ -49,7 +51,7 @@ body
     z-index: 900;
     width: inherit;
     height: inherit;
-    border-radius: 100px;
+    /*border-radius: 100px;*/
     -webkit-transform: rotateX(0deg) rotateY(0deg);
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
@@ -81,7 +83,7 @@ body
             width: inherit;
             height: inherit;
             background-color: green;
-            border-radius: 100px;
+            /*border-radius: 100px;*/
             -webkit-transform: rotateY(-180deg);
             -webkit-transform-style: preserve-3d;
             -webkit-backface-visibility: hidden;
