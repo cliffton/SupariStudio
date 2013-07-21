@@ -12,8 +12,8 @@ body
 {
 	height: 400px;
 	width: 2000px;
-	background-color: black;
-	opacity: 0.6;
+	background-color: #35363c;
+	
 	z-index: 100;
 	position: relative;
 	left: 0px;
@@ -64,7 +64,7 @@ body
     -moz-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
-    background-color: red;
+    background-color: #d13f4a  ;
 
 }
 
@@ -82,7 +82,7 @@ body
             z-index: 800;
             width: inherit;
             height: inherit;
-            background-color: green;
+            background-color: #9bcd9b;
             /*border-radius: 100px;*/
             -webkit-transform: rotateY(-180deg);
             -webkit-transform-style: preserve-3d;
@@ -108,49 +108,29 @@ body
 }
 
 
-.rightButton
+#goLeft
 {
 	position:absolute;
 	left:1200px;
-	margin-top: 350px;
+	margin-top: 320px;
 	top: auto;
 
 }
 
-.leftButton
+#goRight
 {
 	position: absolute;
 	left:100px;
-	margin-top: 350px;
+	margin-top: 320px;
 	top:auto;
 }
 
-#treasure
-{
-	height: 50px;
-	width: 50px;
-	position: relative;
-	text-align: center;
-	top: 80px;
-	left: 60px;
-	color: black;
-	text-decoration: none;
-}
-
-#dp
-{
-	border-radius: 100px;
-	height: 200px;
-	width: 200px;
-
-}
 
 #team
 {
 	position: relative;
 	height: 600px;
-	width: 90%;
-	left: 5%;
+	
 	margin-top: 100px;
 	border: 5px solid black;
 	opacity: 0.6;
@@ -192,18 +172,38 @@ body
 	background: url(../img/envelope/map.png) no-repeat;
 	z-index: 900;
 	position: relative;
-	border-radius: 50px;
+	border-radius: 20px;
 }
 
-#evelopeContainer
+
+
+#eve
+{
+	width: 400px;
+	height: 350px;
+	background-color: white;
+	position: absolute;
+	left: 850px;
+	top: 40px;	
+	z-index: 100;
+	border-radius: 50px;
+	box-shadow: 5px 5px 5px #888888;
+	opacity: 0.9;
+}
+
+
+
+
+#envelopeContainer
 {
 	position: absolute;
 	/*border: 1px dotted black;*/
-	margin-top: 180px;
-	margin-left: 850px;
+	top: 125px;
+	left: 20px;
 	z-index: 1000;
 	height: 200px;
 	width: 350px;
+	box-shadow: 5px 5px 5px #888888;
 
 }
 
@@ -214,14 +214,36 @@ body
 	height: 200px;
 }
 
+#paper
+{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 20px;
+	top: -50px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+#envelopeFrontImg
+{
+	position: absolute;
+	width: 350px;
+	height: 200px;
+}
+
+#paper:hover
+{
+	-webkit-transform: translate(0px,-50px);
+}
+
 .flap
 {
-	margin-top: 58px;
-	margin-left: 850px;
+	top: 5px;
+	left: 20px;
 	position: absolute;
 	width: 350px;
 	height:120px;
-	border: 1px dotted red;
+	/*border: 1px dotted red;*/
 
 }
 
@@ -231,17 +253,22 @@ body
 	width: inherit;
 	height: inherit;
 	z-index: 200;
-	-webkit-transform: rotateX(0deg) rotateY(0deg);
+	-webkit-transform: rotateX(0deg);
+	  -webkit-transform-origin:50% 100% 100%;
     -webkit-transform-style: preserve-3d;
     -webkit-backface-visibility: hidden;
      -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+   
+  
+
 }
 
 .flapOpenImg
 {
 	height: inherit;
 	width: inherit;
+	/*background-color: blue;*/
 }
 
 .flap.flipFlap .flapOpen 
@@ -249,6 +276,7 @@ body
 	z-index: 900;
     -webkit-transform: rotateX(180deg);
     -moz-transform: rotateY(180deg);
+  -webkit-transform-origin:50% 100% 100%;
 	
 }
 
@@ -260,11 +288,14 @@ body
 	width: inherit;
 	height: inherit;
 	z-index: 100;
-	-webkit-transform: rotateY(-180deg);
+	-webkit-transform: rotateX(-180deg);
+	 -webkit-transform-origin:100% 50% 100%;
 	-webkit-transform-style: preserve-3d;
 	-webkit-backface-visibility: hidden;
 	-webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    
+    
 
 }
 
@@ -272,6 +303,7 @@ body
 {
 	width: inherit;
 	height: inherit;
+	background-color: red;
 
 }
 
@@ -279,7 +311,8 @@ body
 .flap.flipFlap .flapClose 
 {
 	z-index: 1000;
-    -webkit-transform: rotateX(0deg) rotateY(0deg);
+    -webkit-transform: rotateX(0deg);
+ -webkit-transform-origin:100% 50% 100%;
 }
 
 
@@ -317,30 +350,52 @@ body
 
 .social
 {
-	z-index: 10000;
+	z-index: 1000000;
 	position: absolute;
-	border: 1px solid yellow;
-	
+	/*border: 1px solid yellow;*/
+	top: 50px;
+	left: 1260px;
 
 
 
 }
 
-.social:hover
+#facebook:hover
 {
 	zoom:150%;
 }
 
 
+#googleplus:hover
+{
+	zoom:150%;
+}
 
 
+#linkedin:hover
+{
+	zoom:150%;
+}
 
 
+#theVid
+{
+	margin-left:40px;
+	margin-top: 40px;
 
+}
 
-
-
-
+#addressSpace
+{
+	position: absolute;
+	background-color: white;
+	opacity: 0.9;
+	width: 300px;
+	border-radius: 30px;
+	top: 10px;
+	left: 270px;
+	box-shadow: 5px 5px 5px #888888;
+}
 
 
 

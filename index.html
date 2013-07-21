@@ -5,11 +5,16 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
     <link type='text/css' href='css/basic.css' rel='stylesheet' media='screen' />
+    <link href="css/m-styles.min.css" rel="stylesheet"> 
 	<title>Supari Studios</title>
 </head>
 <!--<body style="overflow-x: hidden">-->
+
+
 <body>
+
 	<div class="row-fluid">
+        <!--
 		<div class="nav-collapse">
         	<ul class="nav nav-pills pull-right">
             	<li><a href=""><i class="icon-home icon-2x"></i>Ghari<br></a>
@@ -21,14 +26,25 @@
             	<li><a href=""><i class=" icon-envelope icon-2x"></i>HUMSE CONTACT KARO</a>
             	</li>
         	</ul>
-     	</div>
+     	</div>-->
+
+        <div class="m-btn-group toggle-buttons pull-right">
+            <a href="#" class="m-btn blue big active">Home</a>
+            <a href="#" class="m-btn black big">About Us</a>
+            <a href="#" class="m-btn purple big">Work</a>
+            <a href="#" class="m-btn red big">Clients</a>
+            <a href="#" class="m-btn green big">Contact</a>
+        </div>
+
+
+
  	</div>
 
-    <p id="demo">A</p>
+    <!--<p id="demo">A</p>-->
 
 
  	<div class="workContainer" >
-        <div id='basic-modal'>
+        <div id="basic-modal">
         <div class="marTop">
             <div class="item span2">
                 <div class="front">
@@ -38,7 +54,7 @@
                     
                 </div>
             </div>
-                <div class="leftButton btn btn-primary" id="goRight">Go Right</div>
+                <a href="#" class="m-btn bigicn-only blue" id="goRight"><i class="m-icon-big-swapleft"></i></a>
             <div class="item span2">
                 <div class="front">
                
@@ -89,12 +105,12 @@
                     
                 </div>
             </div>
-            
-            <div class="rightButton btn btn-primary" id="goLeft">GO LEFT</div>
+            <a href="#" class="m-btn bigicn-only blue" id="goLeft"><i class="m-icon-big-swapright"></i></a>
+            <!--<div class="rightButton btn btn-primary" id="goLeft">GO LEFT</div>-->
         </div>
     </div>
     <div id="basic-modal-content">
-            <iframe id="modal" src="http://player.vimeo.com/video/69277800" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+            <iframe id="theVid" src="http://player.vimeo.com/video/69277800" width="500" height="281" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 
         </div>
 
@@ -144,8 +160,26 @@
     -->
 
     <div class="row-fluid" id="footer">
-        <div id="evelopeContainer">
+        <div class="span4 text-center" id="addressSpace">
+                    <h4>Connect</h4>
+                    <address>
+                        <strong>Cliffton Fernandes</strong><br>
+                                B/2 Salvation Apts, N. M. Kale Marg<br>
+                                Dadar, Mumbai, 400028<br>
+                                <abbr title="Mobile">Tel:</abbr> +91-9920909752
+                    </address>
+ 
+                    <address>
+                                <strong>Email:</strong>
+                                <a href="mailto:#">cliffton.fernandes@hotmail.com</a>
+                    </address>
+        </div>
+
+    <div id="eve">
+        <div id="envelopeContainer">
             <img id="envelopeBackImg" src="img/envelope/envelopeBack.png">
+            <img id="paper" src="img/envelope/papercut.png">
+            <img id="envelopeFrontImg" src="img/envelope/envelopeFront.png">
         </div>
         <div class="flap">
             <div class="flapOpen">
@@ -155,11 +189,11 @@
                 <img class="flapCloseImg" src="img/envelope/flapFront.png">
             </div>
         </div> 
-
+    </div>
         <div class="social">
-            <span title="Facebook"><a class="social" id="facebook"  href="https://www.facebook.com/cliffton" target="_blank"></a></span><br>
-            <span title="Google+"><a class="social" id="googleplus" href="https://plus.google.com/u/0/111716524382057069927" target="_blank"></a></span><br>
-            <span title="LinkedIn"><a class="social" id="linkedin" href="http://www.linkedin.com/profile/view?id=91104783" target="_blank"></a></span><br>
+            <div id="facebook"><a class="social"  href="https://www.facebook.com/cliffton" target="_blank"></a></div><br>
+            <div id="googleplus"><a class="social"  href="https://plus.google.com/u/0/111716524382057069927" target="_blank"></a></div><br>
+            <div id="linkedIn"><a class="social" href="http://www.linkedin.com/profile/view?id=91104783" target="_blank"></a></div><br>
         </div>
 
     </div>
@@ -173,6 +207,8 @@
 	<script type="text/javascript" src="js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/custom.js"></script>
     <script type='text/javascript' src='js/jquery.simplemodal.js'></script>
-<script type='text/javascript' src='js/basic.js'></script>
+    <script type='text/javascript' src='js/basic.js'></script>
+    <script src="js/m-dropdown.min.js"></script>
+    <script src="js/m-radio.min.js"></script>
 </body>
 </html>

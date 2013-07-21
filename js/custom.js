@@ -10,19 +10,19 @@
 
             var leftPosition = $('.workContainer').position();
             var carname="Volvo";
-            document.getElementById("demo").innerHTML=leftPosition.left;
+            /*document.getElementById("demo").innerHTML=leftPosition.left;*/
 
             //move div yeah !!!
             
                 $('#goLeft').click(function()
                 {  
                     var leftPosition = $('.workContainer').position();
-                    document.getElementById("demo").innerHTML=leftPosition.left;
+                    /*document.getElementById("demo").innerHTML=leftPosition.left;*/
                     if(leftPosition.left>-500)
                     {
-                        $('.workContainer').animate({left:'+=-200px'});
-                        $('#goLeft').animate({left:'+=200px'});
-                        $('#goRight').animate({left:'+=200px'});
+                        $('.workContainer').animate({left:'+=-200px'},100);
+                        $('#goLeft').animate({left:'+=200px'},100);
+                        $('#goRight').animate({left:'+=200px'},100);
                     }
 
 
@@ -36,12 +36,12 @@
                 {
 
                     var leftPosition = $('.workContainer').position();
-                    document.getElementById("demo").innerHTML=leftPosition.left;
+                    /*document.getElementById("demo").innerHTML=leftPosition.left;*/
                     if(leftPosition.left<0)
                     {
-                        $('.workContainer').animate({left:'+=200px'});
-                        $('#goRight').animate({left:'+=-200px'});
-                        $('#goLeft').animate({left:'+=-200px'});
+                        $('.workContainer').animate({left:'+=200px'},100);
+                        $('#goRight').animate({left:'+=-200px'},100);
+                        $('#goLeft').animate({left:'+=-200px'},100);
                     }
 
                 });
@@ -49,18 +49,6 @@
             
 
             
-
-            $('#evelopeFront').mouseover(function()
-            {
-                $('#letter').slideUp("slow");
-            });
-
-            $('.flap').hover(function(){
-                $(this).addClass('flipFlap');
-            },function(){
-                $(this).removeClass('flipFlap');
-            });            
-
 
 
 
