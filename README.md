@@ -1,3 +1,5 @@
+THIS PROJECT IS SCRAPPED.
+
 SupariStudio
 ============
 
